@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+@media screen and (min-width: 401px) {
+
+    body {
+        background-color: #c1dee7;
+        max-width: 940px;
+        margin: auto;
+    }
+    h1 {
+        color: #CD5C5C;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 54px;
+        background-image: url(images/Concrete-plant.jpg);
+        height: 600px;
+        margin-top: 0;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    #Home {
+        color: #4B0082;
+        font-size: 18px
+    }
+    h3 {
+        font-size: 24px;
+        color: #4B0082;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 2px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+    nav a {
+        background: #0db5b5;
+        color: #3f3f3f;
+        text-decoration: none;
+        border-radius: 10px;
+        text-align: center;
+        height: 40px;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+    nav a:hover {
+        background: #92d3d3;
+        color: #6b6b6b;
+    }
+    h2 {
+        border: 2px solid #2e3f8c;
+        font-family: 'Roboto', cursive;
+        font-size: 28px;
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        color: #CD5C5C;
+    }
+    .about {
+        list-style-type: circle;
+        color: #4B0082;
+        font-size: 18px;
+        border: 6px solid #663399;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+    .about li {
+        margin-left: 20px;
+    }
+    .products {
+        list-style-type: circle;
+        color: #4B0082;
+        font-size: 18px;
+        border: 6px solid #663399;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+    .products li {
+        margin-left: 20px;
+    }
+    .contacts {
+        color: #4B0082;
+        font-size: 18px;
+        border: 6px solid #663399;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+}
+
+body {
+    background-color: #AFEEEE;
+    margin: auto;
+}
+nav a{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
