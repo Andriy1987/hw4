@@ -7,98 +7,239 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Concrete plant</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#Home">Home</a>
-            <a href="#About_us">About us</a>
-            <a href="#Product catalog">Product catalog</a>
-            <a href="#Contacts">Contacts</a>
-            <a href="#Links">Links</a>
-        </nav>
-        <h1>
-            Concrete plant
-        </h1>
-        <h3>
-            Concrete and build materials
-        </h3>
-        
-    </header>
-    <article id="Home">
-        <section>
-            <p>Concrete is a building material, which is obtained by solidifying a mixture of cement, sand, crushed stone and water.</p>
-            <p>Depending on the compressive strength, concrete is divided into stamps. The concrete brand builders determine the strength of the reference cube with a rib of 200 mm. So, in Ukraine, the following concrete grades are used during construction:
-                "M-400", "M-300", "M-250", "M-150", "M-100" and lower. The choice of brand depends on the conditions in which concrete will be used. In some cases, concrete may contain special additives. Ready-made concrete of the desired brand is made
-                at the factory and delivered to the construction site by auto-mixers. The ready-to-dry or semi-dry concrete mix is delivered to the place by dump trucks
-            </p>
-        </section>
-    </article>
-    <article id="About_us">
-        <section>
-            <h2>About us
-            </h2>
-            <p>
-                <ul class= "about">
-                <li> Production, delivery and sale of concrete;</li>
-                <li> Sales and delivery: sand, broken stone, claydite, cement;</li>
-                <li> Own delivery of concrete mixers;</li>
-                <li> Services of dump trucks;</li>
-                <li> Removal of construction waste;</li>
-                <li> Responsibility, efficiency and attentive attitude towards clients;</li>
-                </ul>
-            </p>
-        </section>
-         <section id='Product catalog'>
-             <h2>Our products
-            </h2>
-             
-             <ul class= "products">
-                <li> Сoncrete</li>
-                <li> Сlaydite сoncrete</li>
-                <li> Сement mortar</li>
-                <li> Sand</li>
-                <li> Broken stone</li>
-                <li> Сlaydite</li>
-                </ul>
-         </section>
-        
-    </article>
-    <article id="Contacts">
-        <section>
-            <h2>Contact us
-            </h2>
-            <div class="contacts"><p>
-                <form method="POST" action="https://formspree.io/alavrinok@gmail.com">
-
-                    <label> Your Name: 
-            <input type="text" name="Your Name:" placeholder=" Your Name" required autofocus>
-        </label>
-                    <br>
-                    <label> Your Email Address:
-            <input type="email" name="Email Address" placeholder="Your Email Address:" required>
-        </label>
-                    <br>
-                    <label> Your message: 
-            <input type="text" name=" Your message" placeholder="Your message:" required>
-        </label>
-                    <br>
-                    <input type="submit" value="SEND">
+    <div class="container">
+        <header id="Top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                <a class="navbar-brand" href=""><i class="fas fa-industry fa-3x"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Top">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About_us">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Product_catalog">Product catalog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contacts</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#Contact_us">Get Support & Quotation</a>
+                                <a class="dropdown-item" href="#Contacts">Contact us</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Links">Links</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success my-0 my-sm-0" type="submit">Search</button>
                     </form>
-                    </p>
+                </div>
+            </nav>
+            <h1>
+                Concrete plant
+            </h1>
+            <h3>
+                Concrete and build materials
+            </h3>
+        </header>
+        <article id="Home">
+            <section>
+                <p>Concrete is a building material, which is obtained by solidifying a mixture of cement, sand, crushed stone and water.</p>
+                <p>Depending on the compressive strength, concrete is divided into stamps. The concrete brand builders determine the strength of the reference cube with a rib of 200 mm. So, in Ukraine, the following concrete grades are used during construction:
+                    "M-400", "M-300", "M-250", "M-150", "M-100" and lower. The choice of brand depends on the conditions in which concrete will be used. In some cases, concrete may contain special additives. Ready-made concrete of the desired brand is
+                    made at the factory and delivered to the construction site by auto-mixers. The ready-to-dry or semi-dry concrete mix is delivered to the place by dump trucks
+                </p>
+            </section>
+        </article>
+        <article id="About_us">
+            <section>
+                <h2>About us</h2>
+                <div id="carouselAbout" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselAbout" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselAbout" data-slide-to="1"></li>
+                        <li data-target="#carouselAbout" data-slide-to="2"></li>
+                        <li data-target="#carouselAbout" data-slide-to="3"></li>
+                        <li data-target="#carouselAbout" data-slide-to="4"></li>
+                        <li data-target="#carouselAbout" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="../images/1car.jpg" alt="Production, delivery and sale of concrete">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="font-weight-bold">Production, delivery and sale of concrete</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../images/2car.jpg" alt="Own delivery of concrete mixers">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Own delivery of concrete mixers</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../images/3car.jpg" alt="Services of dump trucks">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Services of dump trucks</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../images/5car.jpg" alt="Responsibility, efficiency and attentive attitude towards clients">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Responsibility, efficiency and attentive attitude towards clients</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../images/6car.jpg" alt="Sales and delivery: sand, broken stone, claydite, cement">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Sales and delivery: sand, broken stone, claydite, cement</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../images/4car.jpg" alt="Sales and delivery: sand, broken stone, claydite, cement">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Sales and delivery: sand, broken stone, claydite, cement</h5>
+                            </div>
+                        </div>
                     </div>
-        </section>
-    </article>
-    <footer id="Links">
-        <h2>Follow us on:</h2>
-        <p>
-            <a href="http://https//www.facebook.com/concreteLviv">Facebook</a>
-            <a href="https://www.youtube.com/watch?v=BbCDktMazvQ">YouTube</a>
-        </p>
-    </footer>
-
-
+                    <a class="carousel-control-prev" href="#carouselAbout" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span></a>
+                    <a class="carousel-control-next" href="#carouselAbout" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span></a>
+                </div>
+            </section>
+            <section id='Product_catalog'>
+                <h2>Our products
+                </h2>
+                <p>
+                    <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Сoncrete</a>
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Claydite concrete</button>
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Сement mortar</button>
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Sand</button>
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">Broken stone</button>
+                    <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">Сlaydite</button>
+                </p>
+                <div class="column">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                Concrete is a composite material composed of fine and coarse aggregate bonded together with a fluid cement (cement paste) that hardens over time. Most concretes used are lime-based concretes such as Portland cement concrete or concretes made with other
+                                hydraulic cements, such as calcium aluminate cements
+                                <img src="../images/concrete.jpg" alt="concrete">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                Claydite concrete is building material, monolithic and hardened (frozen in a natural way), containing in its composition, in addition to cement, expanded clay. It is obtained by mixing (mixing) in the water of cement, sand and filler in a proportion of
+                                1: 2: 3, while the filler is used as expanded clay. When bonding to cement, claydite granules of more than 5 mm in size are usually used.
+                                <img src="../images/claydite_concrete.jpg" alt="Claydite concrete">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample3">
+                            <div class="card card-body">
+                                Mortar is a workable paste used to bind building blocks such as stones, bricks, and concrete masonry units together, fill and seal the irregular gaps between them, and sometimes add decorative colors or patterns in masonry walls. In its broadest sense
+                                mortar includes pitch, asphalt, and soft mud or clay, such as used between mud bricks.
+                                <img src="../images/mortar.jpg" alt="mortar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample4">
+                            <div class="card card-body">
+                                Sand is a naturally occurring granular material composed of finely divided rock and mineral particles. It is defined by size, being finer than gravel and coarser than silt. Sand can also refer to a textural class of soil or soil type; i.e., a soil containing
+                                more than 85 percent sand-sized particles by mass.
+                                <img src="../images/sand.jpg" alt="sand">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample5">
+                            <div class="card card-body">
+                                Crushed stone or angular rock is a form of construction aggregate, typically produced by mining a suitable rock deposit and breaking the removed rock down to the desired size using crushers. It is distinct from gravel which is produced by natural processes
+                                of weathering and erosion, and typically has a more rounded shape.
+                                <img src="../images/br_stone.jpg" alt=" Crushed stone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample6">
+                            <div class="card card-body">
+                                Claydite is a lightweight porous building material obtained by baking the low-melting clay, heating it up to 1050 – 1300°C temperature. (In rotating furnace installation at temperature about 1200°C the organic components of clay burn down while its outside
+                                surface melts). Appearance of claydite reminds gravel, being in the form of granules having mostly oval or round shape and various size, therefore it is often called claydite gravel.
+                                <img src="../images/clyde.jpg" alt="clyde">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="products">
+                    <li> Сoncrete</li>
+                    <li> Сlaydite сoncrete</li>
+                    <li> Сement mortar</li>
+                    <li> Sand</li>
+                    <li> Broken stone</li>
+                    <li> Сlaydite</li>
+                </ul>
+            </section>
+        </article>
+        <article id="Contact_us">
+            <section>
+                <h2>Get Support & Quotation
+                </h2>
+                <div class="contacts">
+                    <form method="POST" action="https://formspree.io/alavrinok@gmail.com">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Your Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput2">Your Email Address:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Your message:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Confirm</button>
+                    </form>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <h2 id="Contacts">Contact us</h2>
+            <p>Company headquarters: No. 466, Zelena Road, Lviv.<br> Second factory: 500 meters north of the Beltway junction on Zhengshang Road, Zhengzhou city.<br> Department of international trade: high-tech Development Zone science Avenue, Jinsuo Road
+                in Zhengzhou.<br> Tel: 00863765861518<br> Fax: 00863715861528<br> Whatsapp:00868838109566
+                <br> Email:info@concreteplant.com
+                <br></p>
+            <h2 id="Links">Follow us on:</h2>
+            <p>
+                <img src="../images/Facebook.jpg" alt="facebook">
+                <a href="http://https//www.facebook.com/concreteLviv">Facebook</a>
+                <img src="../images/youtube.jpg" alt="youtube">
+                <a href="https://www.youtube.com/watch?v=BbCDktMazvQ">YouTube</a>
+            </p>
+        </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script async src="js/smooth-scroll.js"></script>
 </body>
-
 </html>
