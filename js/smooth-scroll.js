@@ -1,11 +1,9 @@
-$(function() {
-    $('.smooth').on('click', function(event) {
-        const target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 800);
+$(document).ready(function(){
+    $('.goto').click( function(){
+    let scroll_el = $(this).attr('href');
+        if ($(scroll_el).length != 0) {
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000);
         }
+	    return false;
     });
 });
