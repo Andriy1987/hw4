@@ -10,7 +10,7 @@
         color: #CD5C5C;
         font-family: 'Berkshire Swash', cursive;
         font-size: 54px;
-        background-image: url(../images/Concrete-plant.jpg);
+        background-image: url(../images/concrete-plant.jpg);
         height: 600px;
         margin-top: 0;
         font-weight: 600;
@@ -45,6 +45,8 @@
     }
     div button {
         margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .about li {
         margin-left: 20px;
@@ -92,6 +94,11 @@
     }
     footer img {
         max-height: 40px;
+    }
+     div button {
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 
