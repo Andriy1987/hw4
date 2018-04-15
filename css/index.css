@@ -41,9 +41,8 @@
     .col {
         font-size: 20px;
     }
-    div button,
-    a {
-        margin-right: 10px;
+    #Product_catalog div p>* {
+        width: 181px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -97,22 +96,24 @@
         height: 683px;
     }
     #totop {
-    display: none;
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    width: 40px;
-    height: 40px;
-    background-image: url(../images/up.jpg);
-    background-size:cover;
-    border-radius: 32px;
-    opacity: 0.5;
-}
- 
-#totop:hover{
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-}
+        display: none;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/up.jpg);
+        background-size: cover;
+        border-radius: 32px;
+        opacity: 0.5;
+    }
+
+    #totop:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+
+
 }
 
 @media screen and (max-width:401px) {
